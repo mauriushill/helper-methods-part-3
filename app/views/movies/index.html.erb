@@ -1,3 +1,4 @@
+<div class="container mt-3">
 <h1>
   List of all movies
 </h1>
@@ -8,8 +9,6 @@
 
 <hr>
 
-<% @movies.each do |movie| %>
-<div class="col-md-3">
-  <%= render partial: "movies/movie_card", locals: { movie: movie } %>
-  </div>
-<% end %>
+
+  <%= render @movies %>
+</div>
